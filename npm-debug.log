@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\node\\node.exe',
+1 verbose cli   'C:\\Users\\ddd\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   'xk' ]
+2 info using npm@3.8.6
+3 info using node@v5.10.0
+4 verbose publish [ 'xk' ]
+5 silly cache add args [ 'xk', null ]
+6 verbose cache add spec xk
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: 'xk',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: 'xk',
+7 silly cache add   spec: 'E:\\laodong\\xk\\xk',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\ddd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle cfcmxk@1.0.0~prepublish: cfcmxk@1.0.0
+11 silly lifecycle cfcmxk@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\ddd\\AppData\\Roaming\\npm-cache\\cfcmxk\\1.0.0\\package.tgz',
+12 verbose tar pack   'E:\\laodong\\xk\\xk' ]
+13 verbose tarball C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package.tgz
+14 verbose folder E:\laodong\xk\xk
+15 verbose addLocalTarball adding from inside cache C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\ddd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd cfcmxk@1.0.0
+18 verbose afterAdd C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\ddd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package\package.json written
+21 silly publish { name: 'cfcmxk',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'test',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'djl' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/ylws/xk.git' },
+21 silly publish   keywords: [ 'vue', 'scroll' ],
+21 silly publish   bugs: { url: 'https://github.com/ylws/xk/issues' },
+21 silly publish   homepage: 'https://github.com/ylws/xk#readme',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'cfcmxk@1.0.0',
+21 silly publish   _shasum: '872fccc42e460f76f627d8cecb3aa53912d956e9',
+21 silly publish   _from: 'xk',
+21 silly publish   _resolved: 'file:xk' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name cfcmxk
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'cfcmxk',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'cfcmxk',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/cfcmxk
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\ddd\AppData\Roaming\npm-cache\cfcmxk\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/cfcmxk
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 13:48:15
+33 verbose request using bearer token for auth
+34 verbose request id 396c6f2c34dcabf4
+35 http request PUT https://registry.npmjs.org/cfcmxk
+36 http 403 https://registry.npmjs.org/cfcmxk
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '104',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 03 Aug 2017 05:48:16 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-nrt6128-NRT',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1501739294.955584,VS0,VE2366',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating C:\Users\ddd\AppData\Roaming\npm-cache\registry.npmjs.org\cfcmxk on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : cfcmxk
+40 verbose stack     at makeError (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Users\ddd\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid cfcmxk
+43 verbose cwd E:\laodong\xk
+44 error Windows_NT 6.1.7601
+45 error argv "D:\\node\\node.exe" "C:\\Users\\ddd\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish" "xk"
+46 error node v5.10.0
+47 error npm  v3.8.6
+48 error code E403
+49 error you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : cfcmxk
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

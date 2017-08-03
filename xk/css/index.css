@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#playerArea { background: #000; height: 100%;position:relative;float:left; width: 100%; }
+#playerArea div { position: relative; float: left; }
+#playerArea video { position: absolute; z-index: 1; }
+#playerArea video::-webkit-media-controls-enclosure { /*禁用播放器控制栏的样式*/ display: none !important; }
+#playerArea video:-webkit-full-screen { z-index: -1; }
+#playerArea .list { border: 1px solid #666; position: relative; overflow: hidden; z-index: 1; }
+#playerArea .list object, #playerArea .list embed { float: left; height: 100%; position: relative; width: 100%; z-index: 1; }
+#playerArea .title { border-bottom: 1px solid #666; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 14px; height: 30px; line-height: 30px; left: 0; position: absolute; top: 0; width: 100%; z-index: 2; }
+#playerArea .nosingal { border: 1px solid #666; color: #fff; float: right; text-align: center; }
+
+#playerArea .fullScreen {}
+#playerArea .outfullScreen {}
+#playerArea .loading { -webkit-animation: loading 1s linear 0s infinite; animation: loading 1s linear 0s infinite; border-width: 5px; border-color: #000 #fff; border-style: solid; border-radius: 50%; bottom: 0; height: 20px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
+#playerArea .error { bottom: 0; color: #fff; display: none; height: 64px; left: 0; margin: auto; position: absolute; right: 0; top: 0; text-align: center; width: 64px; }
+
+/*# sourceMappingURL=index.css.map */
