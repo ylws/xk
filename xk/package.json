@@ -1,21 +1,20 @@
 {
   "name": "cfcmxk",
-  "version": "1.0.0",
-  "description": "test",
+  "version": "1.0.2",
+  "description": "xk",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "djl",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ylws/xk.git"
   },
   "keywords": [
-    "vue",
-    "scroll"
+    "xk"
   ],
+  "author": "djl",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ylws/xk/issues"
   },
