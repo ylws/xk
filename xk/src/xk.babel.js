@@ -292,7 +292,7 @@ var CFCMXK = function () {
 			var cfg = this.cfg;
 			cfg.flashinfo = [];
 			for (var i = 0; i < num; i++) {
-				html += '<div class="list"  id=list_' + i + '  ><div class=" channel icon-yulan iconfont" id="channel_' + i + '" style="display:' + (cfg.channelflag ? 'block' : 'none') + '"></div><div class="mute icon-yinliangguan iconfont" id="mute_' + i + '"></div><div class="title">' + cfg.channeltitle[i] + '</div><div style="width:100%;height:100%"    id=video_' + i + ' ></div></div>';
+				html += '<div class="list"  id=list_' + i + '  ><div class=" channel icon-yulan iconfont" id="channel_' + i + '" style="display:' + (cfg.channelflag ? 'block' : 'none') + '"></div><div class="mute icon-yinliangguan iconfont" id="mute_' + i + '"></div><div class="title" title="' + cfg.channeltitle[i] + '"><span>' + cfg.channeltitle[i] + '</span></div><div style="width:100%;height:100%"    id=video_' + i + ' ></div></div>';
 				cfg.flashinfo.push({
 					num: i,
 					id: 'video_' + i,
@@ -505,9 +505,9 @@ var CFCMXK = function () {
 		key: 'titleevent',
 		value: function titleevent(num, titelarr) {
 			if (titelarr) {
-				this.getid('mute_' + num).parentNode.querySelector('.title').textContent = titelarr[num];
+				this.getid('mute_' + num).parentNode.querySelector('.title').children[0].textContent = titelarr[num];
 			} else {
-				this.getid('mute_' + num).parentNode.querySelector('.title').textContent = '';
+				this.getid('mute_' + num).parentNode.querySelector('.title').children[0].textContent = '';
 			}
 		}
 	}, {
