@@ -902,7 +902,7 @@ html5代码块的代码可以随意更改以适合你的应用，欢迎到论坛
 				}
 			}
 			if(l) {
-				this._K_(D).innerHTML = '<div class="error">' + l + '<div>';
+				this._K_(D).innerHTML = l;
 			}
 			if(g) {
 				this._K_(D).style.color = '#0066cc';

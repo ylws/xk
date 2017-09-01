@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="src/ckplayer/ckplayer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/xk.babel.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="playerArea"></div>
+		
+		<div id="V_fullScreen" class="fullscreen">全屏</div>
+		
+		<script type="text/javascript">
+			
+			
+			var infos = {
+				channelnum: 4, //分屏模式
+				channel: ['rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 'rtmp://live.hkstv.hk.lxdns.com/live/hks'],
+				channeltitle:['1','1','1','1','1','1','1','1','1','1','1','1'],
+				widhei:{
+					wid:1000
+				}
+			}
+			new CFCMXK(infos)
+		</script>
+	</body>
+
+</html>
